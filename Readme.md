@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Родион Колесник](https://up.htmlacademy.ru/htmlcss/21/user/574519).
-* Наставник: [Дмитрий Иовлев] (https://up.htmlacademy.ru/htmlcss/21/user/200490).
+* Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/htmlcss/21/user/200490).
 
 ---
 
