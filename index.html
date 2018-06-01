@@ -18,6 +18,7 @@
 			<!--Для последующей стилизации ссылок как лучше будет сделать - добавить каждой ссылке свой класс или использовать примерно такое в CSS: ".main-nav-list li a {}"?-->
 			<nav class='main-navigation'>
 				<a class='main-header-logo'>
+					<!--Вырезка картинок из фотошопа пока не изучена-->
 					<img src='' width='' height='' alt='Логотип интернет-магазина "Device"'>
 				</a>
 				<ul class='main-nav-list'>
@@ -51,7 +52,6 @@
 				<!--Имеет ли смысл три секции слайдера оборачивать в список?-->
 				<section class='products-slide product-slide-selfie'>
 					<span>01</span>
-					<!--Вырезка картинок из фотошопа пока не изучена-->
 					<img src='' width='' height='' alt='Самая длинная селфи-палка'>
 					<p class='products-slide-lead'>
 						Делай селфи,<br>
@@ -109,7 +109,7 @@
 						Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
 						мощным лазером, замаскированным под стандартную камеру.
 					</p>
-					<a class='products-slide-details' href='fitness-bracelet.html'>Подробнее</a>
+					<a class='products-slide-details' href='quadrupter.html'>Подробнее</a>
 					<table class='products-slide-table'>
 						<tr>
 							<td>Дальность полета</td>
@@ -140,14 +140,14 @@
 			<div class='sevices'>
 				<h2 class='hidden'>Услуги</h2>
 			
-				<!--И здесь тоже радиокнопки-->
+				<!--В списке тоже радиокнопки в качестве переключателей-->
 				<ul class='services-switch-list'>
 					<li>Доставка</li>
 					<li>Гарантия</li>
 					<li>Кредит</li>
 				</ul>
 			
-				<section>
+				<section class='services-slide services-slide-delievery'>
 					<h3 class='service-heading service-delievery-heading'>Доставка</h3>
 					<p class='service-delievery-description'>
 						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
@@ -155,7 +155,7 @@
 					</p>
 				</section>
 			
-				<section>
+				<section class='services-slide services-slide-warranty'>
 					<h3 class='service-heading service-warranty-heading'>Гарантия</h3>
 					<p class='service-warranty-description'>
 						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -163,7 +163,7 @@
 					</p>
 				</section>
 			
-				<section>
+				<section class='services-slide services-slide-credit'>
 					<h3 class='service-heading service-credit-heading'>Кредит</h3>
 					<p class='service-credit-description'>
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -172,7 +172,7 @@
 				</section>
 			</div>
 			
-			<section>
+			<section class='logo-promo'>
 				<h2 class='hidden'>Логотипы</h2>
 			
 				<ul class='logo-promo-list'>
@@ -238,9 +238,9 @@
 			
 			<div class='main-footer-social'>
 				<ul class='social-btn-list'>
-					<li><a>Facebook</a></li>
-					<li><a>Instagram</a></li>
-					<li><a>Twitter</a></li>
+					<li><a class='social-fb' href='www.facebook.com'>Facebook</a></li>
+					<li><a class='social-inst' href='www.instagram.com'>Instagram</a></li>
+					<li><a class='social-twit' href='www.twitter.com'>Twitter</a></li>
 				</ul>
 			</div>
 			
