@@ -8,7 +8,14 @@
 		<header class="main-header">
 			<a class="main-header-logo">
 				<img src="img/logo-device.svg" width="169" height="54" alt="Логотип интернет-магазина Device">
-			</a>
+      </a>
+
+      <form class="main-search-form" method="GET" action="https://echo.htmlacademy.ru">
+        <p class="main-search-input">
+          <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+          <input type="search" name="search" id="main-search" value="" placeholder="Поиск по сайту">
+        </p>
+      </form>
 
 			<nav class="main-navigation">
 				<ul class="main-nav-order">
@@ -61,18 +68,24 @@
 		</header>
 
 		<main>
-			<h1 class="hidden">Интернет-магазин электроники "Девайс"</h1>
+			<h1 class="visually-hidden">Интернет-магазин электроники "Девайс"</h1>
 
 													<!--Баннеры-->
 
 			<section class="banners">
-				<h2 class="hidden">Промо товары</h2>
+        <h2 class="visually-hidden">Промо товары</h2>
+
+        <ul class="banners-switch-list">
+          <li class="banners-switch-item"><button class="button" type="button">Самая длинная селфи-палка</button></li>
+          <li class="banners-switch-item"><button class="button" type="button">Мотивирующий фитнес-браслет</button></li>
+          <li class="banners-switch-item"><button class="button" type="button">Квадрокоптер с лазером</button></li>
+        </ul>
 
 				<ul class="banners-slider">
 					<li class="banners-slide banners-slide-selfie">
-						<span>01</span>
+						<span>Первый слайд</span>
 						<p class="banners-slide-image">
-							<img src="img/slider-selfiestick.png" width="384" height="486" alt="Самая длинная селфи-палка">
+							<img src="img/slider-selfiestick.png" width="384" height="486" alt="Изображение самой длинной селфи-палки">
 						</p>
 						<p class="banners-slide-lead">
 							Делай селфи,<br>
@@ -99,7 +112,7 @@
 					</li>
 
 					<li class="banners-slide banners-slide-bracelet">
-						<span>02</span>
+						<span>Второй слайд</span>
 						<p class="banners-slide-image">
 							<img src="img/slider-bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
 						</p>
@@ -123,9 +136,9 @@
 					</li>
 
 					<li class="banners-slide banners-slide-quadrupter">
-						<span>03</span>
+						<span>Третий слайд</span>
 						<p class="banners-slide-image">
-							<img src="img/slider-quadrapter.png" width="526" height="334" alt="Квадрокоптер">
+							<img src="img/slider-quadrapter.png" width="526" height="334" alt="Квадрокоптер с лазером">
 						</p>
 						<p class="banners-slide-lead">
 							Порхает как бабочка,<br>
@@ -147,11 +160,11 @@
 							</tr>
 						</table>
 					</li>
-				</ul>
+        </ul>
 			</section>
 
 			<section class="catalog-section">
-				<h2 class="hidden">Каталог товаров</h2>
+				<h2 class="visually-hidden">Каталог товаров</h2>
 
 				<ul class="catalog-section-list">
 					<li class="catalog-section-item catalog-section-virtual">
@@ -177,14 +190,14 @@
 
 													<!--Услуги-->
 
-			<section class="sevices">
-				<h2 class="hidden">Услуги</h2>
+			<section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
 
 				<ul class="services-switch-list">
-					<li class="services-switch-item services-switch-delievery">Доставка</li>
-					<li class="services-switch-item services-switch-warranty">Гарантия</li>
-					<li class="services-switch-item services-switch-credit">Кредит</li>
-				</ul>
+          <li class="services-switch-item services-switch-delievery"><button class="button" type="button">Доставка</button></li>
+          <li class="services-switch-item services-switch-warranty"><button class="button" type="button">Гарантия</button></li>
+					<li class="services-switch-item services-switch-credit"><button class="button" type="button">Кредит</button></li>
+        </ul>
 
 				<ul class="services-slider">
 					<li class="services-slide services-slide-delievery">
@@ -214,13 +227,13 @@
 			</section>
 
 			<section class="logo-promo">
-				<h2 class="hidden">Логотипы производителей</h2>
+				<h2 class="visually-hidden">Логотипы производителей</h2>
 
 				<ul class="logo-promo-list">
-					<li class="logo-promo-item"><img src="img/logo-dji.png" width="260" height="100" alt="DJI"></li>
-					<li class="logo-promo-item"><img src="img/logo-spgadjets.png" width="260" height="100" alt="SPGadgets"></li>
-					<li class="logo-promo-item"><img src="img/logo-gopro.png" width="260" height="100" alt="GoPro"></li>
-					<li class="logo-promo-item"><img src="img/logo-vive.png" width="260" height="100" alt="Vive"></li>
+					<li class="logo-promo-item"><img src="img/logo-dji.png" width="260" height="100" alt="Логотип DJI"></li>
+					<li class="logo-promo-item"><img src="img/logo-spgadjets.png" width="260" height="100" alt="Логотип SPGadgets"></li>
+					<li class="logo-promo-item"><img src="img/logo-gopro.png" width="260" height="100" alt="Логотип GoPro"></li>
+					<li class="logo-promo-item"><img src="img/logo-vive.png" width="260" height="100" alt="Логотип Vive"></li>
 				</ul>
 			</section>
 
@@ -252,7 +265,7 @@
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<p class="map">
 					<a href="map.html">
-						<img src="img/map.png" width="560" height="222" alt="Карта">
+						<img src="img/map.png" width="560" height="222" alt="Карта с расположением офиса по адресу: &quot;г.Москва, улица строителей, 15&quot;">
 					</a>
 				</p>
 
@@ -311,14 +324,36 @@
 		</footer>
 
 		<section class="write-us-pop-up">
-			<h2 class="hidden">Напишите нам</h2>
-			<span class="pop-up-close">x</span>
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
+        <p class="write-us-input">
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" name="name" id="write-us-name" value="" placeholder="Имя Фамилия">
+        </p>
+
+        <p class="write-us-input">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="write-us-email" value="" placeholder="email@example.com">
+        </p>
+
+        <p class="write-us-input">
+          <label for="write-us-message">Текст письма:</label>
+          <textarea name="message" id="write-us-message" placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+
+      <button class="button" type="button">Закрыть поле</button>
 		</section>
 
 		<section class="map-pop-up">
-			<h2 class="hidden">Карта</h2>
-			<p class="map-big"><img src="img/map-big.png" width="960" height="559"></p>
-			<span class="pop-up-close">x</span>
+			<h2 class="visually-hidden">Карта</h2>
+			<p class="map-big">
+        <img src="img/map-big.png" width="960" height="559" alt="Карта с расположением офиса по адресу: &quot;г.Москва, улица строителей, 15&quot;">
+      </p>
+
+      <button class="button" type="button">Закрыть поле</button>
 		</section>
 	</body>
 </html>
