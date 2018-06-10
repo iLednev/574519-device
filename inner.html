@@ -90,15 +90,19 @@
           <fieldset class="filters-fieldset">
             <legend class="filters-legend">Стоимость</legend>
 
-            <p class="filters-price-range">
+            <div class="filters-price-range">
               <div class="price-range-bar"></div>
               <button class="button-range range-min" type="button"><span class="visually-hidden">Минимальная цена</span></button>
               <button class="button-range range-max" type="button"><span class="visually-hidden">Максимальная цена</span></button>
-            </p>
+            </div>
 
-            <p class="filters-price-text">
-              <input type="text" value="от 0">
-              <input type="text" value="до 5000">
+            <p class="filters-price-text filters-price-min">
+              <label for="price-min-value">От</label>
+              <input type="text" id="price-min-value" value="0">
+            </p>
+            <p class="filters-price-text filters-price-max">
+              <label for="price-max-value">До</label>
+              <input type="text" id="price-max-value" value="5000">
             </p>
           </fieldset>
 
@@ -200,7 +204,7 @@
             </h3>
             <span class="products-item-price">1 500 руб.</span>
             <p class="products-item-image">
-              <img src="img/catalog-selfie-professional.jpg" width="" height="" alt="Профессиональная селфи-палка">
+              <img src="img/catalog-selfie-professional.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </p>
 
             <div class="products-action">
@@ -213,7 +217,7 @@
             <h3 class="products-item-heading"><a href="selfie-stick1.html">Непотопляемая селфи-палка</a></h3>
             <span class="products-item-price">2 500 руб.</span>
             <p class="products-item-image">
-              <img src="img/catalog-selfie-unsinkable.jpg" width="" height="" alt="Непотопляемая селфи-палка">
+              <img src="img/catalog-selfie-unsinkable.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             </p>
 
             <div class="products-action">
@@ -228,7 +232,7 @@
             </h3>
             <span class="products-item-price">4 900 руб.</span>
             <p class="products-item-image">
-              <img src="img/catalog-selfie-hand.jpg" width="" height="" alt="Селфи-палка &laquo;Следуй за мной &raquo;">
+              <img src="img/catalog-selfie-hand.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной &raquo;">
             </p>
 
             <div class="products-action">
