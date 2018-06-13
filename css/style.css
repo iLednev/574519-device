@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gilroy";
   src:
-    local("Gilroy-ExtraBold")
+    local("Gilroy-ExtraBold"),
     url("fonts/gilroyextrabold.woff2"),
     url("fonts/gilroyextrabold.woff");
   font-weight: 800;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Gilroy";
   src:
-    local("Gilroy-Light")
+    local("Gilroy-Light"),
     url("fonts/gilroylight.woff2"),
     url("fonts/gilroylight.woff");
   font-weight: 300;
@@ -22,13 +22,7 @@ body {
   margin: 0px;
   padding: 0px;
 
-  width: 1200px;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #464646;
+  min-width: 1200px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -43,15 +37,19 @@ a {
   text-decoration: none;
 }
 
-.inner-page .main-header-logo:hover,
-.inner-page .main-header-logo:focus,
-.inner-page .main-footer-logo:hover,
-.inner-page .main-footer-logo:focus  {
+img {
+  max-width: 100%;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus,
+.main-footer-logo:hover,
+.main-footer-logo:focus  {
   opacity: 0.6;
 }
 
-.inner-page .main-header-logo:active,
-.inner-page .main-footer-logo:active {
+.main-header-logo:active,
+.main-footer-logo:active {
   opacity: 0.3;
 }
 
@@ -109,6 +107,7 @@ a {
 .main-nav-login,
 .main-nav-order,
 .main-nav-login-auth {
+  list-style: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -127,30 +126,13 @@ a {
   text-transform: uppercase;
 }
 
-.nav-catalog-menu,
-.main-nav-login,
-.main-nav-order,
-.catalog-menu-dropdown,
 .main-nav-information,
-.banners-slider,
-.catalog-section-list,
-.services-switch-list,
-.services-slider,
-.logo-promo-list,
-.about-us-delievery-list,
-.footer-login,
-.footer-nav-information,
-.footer-social-list,
-.main-nav-login-auth,
-.footer-order,
-.breadcrumbs,
-.filters-color-inputs,
-.filters-bluetooth-inputs,
-.sorting-type-list,
-.sorting-variation-list,
-.products-list,
-.pagination,
-.footer-login-auth {
+.nav-catalog-menu,
+.catalog-menu-dropdown {
+  list-style: none;
+}
+
+.breadcrumbs {
   list-style: none;
 }
 
@@ -222,6 +204,11 @@ a {
   background-color: rgba(237, 181, 181, 0.5);
 }
 
+.filters-color-inputs,
+.filters-bluetooth-inputs {
+  list-style: none;
+}
+
 .filters-color-item label,
 .filters-bluetooth-item label {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -237,6 +224,11 @@ a {
 
 .heading-sorting-box {
   background-color: rgba(0, 0, 0, 0.08)
+}
+
+.sorting-type-list,
+.sorting-variation-list {
+  list-style: none;
 }
 
 .sorting-type-list a {
@@ -258,6 +250,10 @@ a {
 
 .sorting-type-list .current {
   color:#000000;
+}
+
+.products-list {
+  list-style: none;
 }
 
 .products-item-heading a {
@@ -293,6 +289,7 @@ a {
 }
 
 .pagination {
+  list-style: none;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -343,6 +340,11 @@ a {
   line-height: 56px;
 }
 
+.banners-slider,
+.banners-switch-list {
+  list-style: none;
+}
+
 .banners-slide-description,
 .services-description,
 .about-us-description,
@@ -384,12 +386,21 @@ a {
   font-weight: 300;
 }
 
+.catalog-section-list {
+  list-style: none;
+}
+
 .catalog-section-item a {
   color: #000000;
 }
 
 .catalog-section-item a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.services-switch-list,
+.services-slider {
+  list-style: none;
 }
 
 .services-heading,
@@ -399,7 +410,13 @@ a {
   line-height: 48px;
 }
 
+.logo-promo-list {
+  list-style: none;
+}
+
 .about-us-delievery-list {
+  list-style: none;
+
   font-size: 16px;
   line-height: 40px;
 }
@@ -434,6 +451,7 @@ a {
 .footer-login,
 .footer-login-auth,
 .footer-order {
+  list-style: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -448,9 +466,15 @@ a {
 }
 
 .footer-login a:hover,
-.footer-login a:focus,
+.footer-login a:focus {
+  color: #ffffff;
+}
+
 .footer-order a:hover,
-.footer-order a:focus,
+.footer-order a:focus {
+  color: #ffffff;
+}
+
 .footer-login-auth a:hover,
 .footer-login-auth a:focus {
   color: #ffffff;
@@ -464,6 +488,7 @@ a {
 
 .footer-nav-information,
 .footer-social-list {
+  list-style: none;
   text-align: center;
 }
 
