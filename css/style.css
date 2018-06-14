@@ -366,8 +366,10 @@ img {
 }
 
 .slide-number {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 179px;
   line-height: 179px;
+  font-weight: 800;
   color: #ffffff
 }
 
@@ -409,12 +411,15 @@ img {
 .banners-slide-table th {
   font-size: 13px;
   line-height: 20px;
+  font-weight: 300;
 }
 
 .banners-slide-table td {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
+  color: #000000;
 }
 
 .catalog-section-list {
