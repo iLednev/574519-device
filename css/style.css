@@ -24,11 +24,11 @@ body {
 
   min-width: 1200px;
 
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  color: #000000;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
 
   background-color: #ffffff;
 }
@@ -54,14 +54,14 @@ img {
 }
 
 .input-search {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
 
   border: none;
   background-color: transparent;
+}
+
+.input-search:focus {
+  color: #000000;
 }
 
 .button-search {
@@ -72,6 +72,8 @@ img {
 
   background-color: transparent;
   border: 2px solid #000000;
+
+  cursor: pointer;
 }
 
 .button-search:hover,
@@ -108,10 +110,6 @@ img {
 .main-nav-order,
 .main-nav-login-auth {
   list-style: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
 }
 
 .current a,
@@ -121,8 +119,18 @@ img {
   color: #464646;
 }
 
+.catalog-menu-item a {
+  line-height: 36px;
+}
+
 .nav-catalog-menu > a,
 .main-nav-information a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  font-weight: 800;
+
   text-transform: uppercase;
 }
 
@@ -132,15 +140,21 @@ img {
   list-style: none;
 }
 
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+}
+
 .breadcrumbs {
   list-style: none;
 }
 
 .breadcrumbs a {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -172,9 +186,24 @@ img {
   border: none;
 }
 
+.filters-legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
 .filters-heading,
 .sorting-heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .filters-price-text,
@@ -211,10 +240,9 @@ img {
 
 .filters-color-item label,
 .filters-bluetooth-item label {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 40px;
-  font-weight: 300;
+  color: #000000;
 }
 
 .filters-color-item input:disabled,
@@ -232,7 +260,6 @@ img {
 }
 
 .sorting-type-list a {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -257,8 +284,10 @@ img {
 }
 
 .products-item-heading a {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -269,7 +298,6 @@ img {
 }
 
 .button-to-compare {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   font-weight: 300;
@@ -277,6 +305,8 @@ img {
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .button-to-compare:hover,
@@ -293,9 +323,15 @@ img {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.pagination-side a {
+.pagination a {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
   letter-spacing: 2px;
+}
+
+.pagination-side a {
   color: #000000;
   text-transform: uppercase;
 }
@@ -336,8 +372,11 @@ img {
 }
 
 .banners-slide-lead {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .banners-slider,
@@ -345,19 +384,12 @@ img {
   list-style: none;
 }
 
-.banners-slide-description,
-.services-description,
-.about-us-description,
-.contacts-description, {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #464646;
-}
-
 .button {
-  font: inherit;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+
   text-transform: uppercase;
   color: #000000;
 
@@ -366,6 +398,8 @@ img {
 
   background-color: #f0c52e;
   border: none;
+
+  cursor: pointer;
 }
 
 .button:active {
@@ -373,11 +407,8 @@ img {
 }
 
 .banners-slide-table th {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 300;
-  color: #464646;
 }
 
 .banners-slide-table td {
@@ -391,6 +422,10 @@ img {
 }
 
 .catalog-section-item a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -406,8 +441,11 @@ img {
 .services-heading,
 .about-us-heading,
 .contacts-heading {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .logo-promo-list {
@@ -417,8 +455,11 @@ img {
 .about-us-delievery-list {
   list-style: none;
 
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .main-footer {
@@ -441,27 +482,28 @@ img {
 }
 
 .footer-information {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
   color: #ffffff;
+}
+
+.footer-information-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
 }
 
 .footer-login,
 .footer-login-auth,
 .footer-order {
   list-style: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
   color: #ffffff;
 }
 
 .footer-login a,
 .footer-order a,
 .footer-login-auth a {
+  line-height: 36px;
+
   color: rgba(255, 255, 255, 0.7)
 }
 
@@ -506,9 +548,16 @@ img {
   opacity: 0.3;
 }
 
+.write-us-input label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
 .write-us-input input,
 .write-us-input textarea {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
