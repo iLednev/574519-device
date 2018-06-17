@@ -416,23 +416,35 @@ img {
 .main-footer-logo {
   margin: 0;
   margin-top: 66px;
-  margin-right: 678px;
   padding: 0;
   width: 180px;
   height: 34px;
 }
 
-.footer-login,
+.footer-login {
+  margin: 0;
+  margin-left: 678px;
+  margin-top: 60px;
+  padding: 0;
+}
+
 .footer-login-auth {
   margin: 0;
+  margin-left: 538px;
   margin-top: 60px;
-  margin-right: 63px;
   padding: 0;
+  min-width: 220px;
+  display: flex;
+}
+
+.footer-profile {
+  margin-right: 20px;
 }
 
 .footer-order {
   margin: 0;
   margin-top: 60px;
+  margin-left: auto;
   padding: 0;
   min-width: 192px;
 
