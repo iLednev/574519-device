@@ -54,7 +54,9 @@ li.banners-slide-bracelet,
 li.banners-slide-quadrupter,
 .services-slide-delievery,
 .services-slide-warranty,
-.banners-switch-list {
+.banners-switch-list,
+.map-pop-up,
+.write-us-pop-up {
   display: none;
 }
 
