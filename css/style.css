@@ -49,6 +49,14 @@ img {
   margin: -1px;
 }
 
+.catalog-menu-dropdown,
+li.banners-slide-bracelet,
+li.banners-slide-quadrupter,
+.services-slide-delievery,
+.services-slide-warranty {
+  display: none;
+}
+
 .user-nav {
   display: flex;
   align-items: center;
