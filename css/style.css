@@ -53,7 +53,8 @@ img {
 li.banners-slide-bracelet,
 li.banners-slide-quadrupter,
 .services-slide-delievery,
-.services-slide-warranty {
+.services-slide-warranty,
+.banners-switch-list {
   display: none;
 }
 
