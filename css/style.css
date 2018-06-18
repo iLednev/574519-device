@@ -152,7 +152,7 @@ li.banners-slide-quadrupter,
   margin-bottom: 18px;
 }
 
-.main-navigation .container {
+.main-navigation .header-container {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
@@ -165,13 +165,14 @@ li.banners-slide-quadrupter,
 .container {
   margin: 0 auto;
   padding: 0;
-  width: 1160px;
+  min-width: 1160px;
 }
 
 .banners {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 95px;
   padding: 0;
+  width: 1160px;
   min-height: 512px;
 }
 
@@ -232,9 +233,10 @@ li.banners-slide-quadrupter,
 
 .catalog-section {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 82px;
   padding: 0;
+  width: 1160px;
 
   border: 2px solid black;
 }
@@ -252,13 +254,17 @@ li.banners-slide-quadrupter,
 }
 
 .services {
-  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
+}
+
+.services-content {
+  margin: 0 auto;
   margin-bottom: 94px;
   padding: 0;
   min-height: 388px;
   width: 1160px;
 
-  background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
   display: flex;
   justify-content: flex-start;
 }
@@ -303,7 +309,7 @@ li.banners-slide-quadrupter,
 }
 
 .logo-promo {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 145px;
   padding: 0;
   width: 1160px;
@@ -318,8 +324,10 @@ li.banners-slide-quadrupter,
 }
 
 .about-us-contacts {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-bottom: 92px;
+  width: 1160px;
   display: flex;
 }
 
@@ -530,6 +538,7 @@ li.banners-slide-quadrupter,
 .main-heading {
   margin: 0 auto;
   margin-bottom: 72px;
+  margin-top: 37px;
   padding: 0;
   padding-left: 60px;
 
