@@ -1835,7 +1835,6 @@ li.banners-slide-selfie img {
   cursor: pointer;
 
   display: none;
-  transition: 3s;
 }
 
 .button-search::before {
@@ -1848,7 +1847,6 @@ li.banners-slide-selfie img {
   bottom: -2px;
   left: -358px;
   background-color: black;
-  transition: 3s;
 }
 
 .button-search:hover,
