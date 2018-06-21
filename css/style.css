@@ -1697,7 +1697,7 @@ li.banners-slide-selfie img {
 .pagination-number-list {
   margin: 0;
   padding: 0;
-  padding-left: 8px;
+  padding-left: 16px;
   list-style: none;
 
   display: flex;
