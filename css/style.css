@@ -1806,7 +1806,9 @@ li.banners-slide-selfie img {
 }
 
 .input-search:focus ~ .button-search {
-  display: block;
+  visibility: visible;
+  border-color: black;
+  color: black;
 }
 
 .input-search:focus {
@@ -1814,7 +1816,8 @@ li.banners-slide-selfie img {
   opacity: 1;
 }
 
-.input-search:focus ~ .button-search::before {
+.input-search:focus ~ .button-search::before,
+.button-search:focus::before {
   width: 356px;
 }
 
@@ -1829,12 +1832,18 @@ li.banners-slide-selfie img {
   margin-left: 139px;
   margin-bottom: 0px;
 
+  color: transparent;
+
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid transparent;
 
   cursor: pointer;
 
-  display: none;
+  visibility: hidden;
+
+  transition: 0.2s;
+
+  outline: none;
 }
 
 .button-search::before {
@@ -1847,12 +1856,13 @@ li.banners-slide-selfie img {
   bottom: -2px;
   left: -358px;
   background-color: black;
+  transition: 0.2s;
 }
 
-.button-search:hover,
-.button-search:focus {
+.input-search ~ .button-search:hover,
+.input-search ~ .button-search:focus {
   color: #ffffff;
-  display: block;
+  visibility: visible;
 
   background-color: #000000;
 }
@@ -2069,6 +2079,68 @@ li.banners-slide-selfie img {
   list-style: none;
 }
 
+.filters-color-item {
+  position: relative;
+}
+
+.color-label {
+  cursor: pointer;
+}
+
+.color-label::after {
+  content: "";
+  position: absolute;
+
+  left: -40px;
+  top: 8px;
+  width: 19px;
+  height: 19px;
+
+  border-radius: 3px;
+  border: 2px solid black;
+  z-index: 2;
+}
+
+.color-input:checked ~ .checkmark::before {
+  content: "";
+  position: absolute;
+
+  top: 6px;
+  left: -32px;
+
+  width: 4px;
+  height: 17px;
+
+  background-color: black;
+  border: 2px solid white;
+  border-bottom: none;
+  border-radius: 2px;
+
+  transform: rotate(45deg);
+
+  transform-origin: 100% 100%;
+  z-index: 4;
+}
+
+.color-input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+
+  top: 24px;
+  left: -38px;
+
+  width: 11px;
+  height: 4px;
+  background-color: black;
+  border: 2px solid white;
+  border-top: none;
+  border-radius: 2px;
+
+  transform: rotate(45deg);
+  transform-origin: 100% 0%;
+  z-index: 6;
+}
+
 .filters-color-item label,
 .filters-bluetooth-item label {
   font-size: 14px;
@@ -2079,6 +2151,43 @@ li.banners-slide-selfie img {
 .filters-color-item input:disabled,
 .filters-bluetooth-item input:disabled {
   color: #a6a6a6;
+}
+
+.filters-bluetooth-item {
+  position: relative;
+}
+
+.bluetooth-label::after {
+  content: "";
+  position: absolute;
+
+  top: 6px;
+  left: -40px;
+
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.bluetooth-label {
+  cursor: pointer;
+}
+
+.bluetooth-input:checked ~ .bluetooth-label:before {
+  content: "";
+  position: absolute;
+
+
+  top: 14px;
+  left: -32px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .products-list {
