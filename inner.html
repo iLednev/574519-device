@@ -138,29 +138,24 @@
 
                 <ul class="filters-color-inputs">
                   <li class="filters-color-item">
-                    <input class="color-input" type="checkbox" name="color-black" id="filters-color-black" checked>
-                    <span class="checkmark"></span>
-                    <label class="color-label" for="filters-color-black">Чёрный</label>
+                    <input class="color-input visually-hidden" type="checkbox" name="color-black" id="filters-color-black" checked>
+                    <label class="color-label" for="filters-color-black"><span class="checkmark"></span>Чёрный</label>
                   </li>
                   <li class="filters-color-item">
-                    <input class="color-input" type="checkbox" name="color-white" id="filters-color-white">
-                    <span class="checkmark"></span>
-                    <label class="color-label" for="filters-color-white">Белый</label>
+                    <input class="color-input visually-hidden" type="checkbox" name="color-white" id="filters-color-white">
+                    <label class="color-label" for="filters-color-white"><span class="checkmark"></span>Белый</label>
                   </li>
                   <li class="filters-color-item">
-                    <input class="color-input" type="checkbox" name="color-blue" id="filters-color-blue" checked>
-                    <span class="checkmark"></span>
-                    <label class="color-label" for="filters-color-blue">Синий</label>
+                    <input class="color-input visually-hidden" type="checkbox" name="color-blue" id="filters-color-blue" checked>
+                    <label class="color-label" for="filters-color-blue"><span class="checkmark"></span>Синий</label>
                   </li>
                   <li class="filters-color-item">
-                    <input class="color-input" type="checkbox" name="color-red" id="filters-color-red" checked>
-                    <span class="checkmark"></span>
-                    <label class="color-label" for="filters-color-red">Красный</label>
+                    <input class="color-input visually-hidden" type="checkbox" name="color-red" id="filters-color-red" checked>
+                    <label class="color-label" for="filters-color-red"><span class="checkmark"></span>Красный</label>
                   </li>
                   <li class="filters-color-item">
-                    <input class="color-input" type="checkbox" name="color-pink" id="filters-color-pink">
-                    <span class="checkmark"></span>
-                    <label class="color-label" for="filters-color-pink">Розовый</label>
+                    <input class="color-input visually-hidden" type="checkbox" name="color-pink" id="filters-color-pink">
+                    <label class="color-label" for="filters-color-pink"><span class="checkmark"></span>Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -170,11 +165,11 @@
 
                 <ul class="filters-bluetooth-inputs">
                   <li class="filters-bluetooth-item">
-                    <input class="bluetooth-input" type="radio" name="bluetooth" id="bluetooth-true" value="true" checked>
+                    <input class="bluetooth-input visually-hidden" type="radio" name="bluetooth" id="bluetooth-true" value="true" checked>
                     <label class="bluetooth-label" for="bluetooth-true">Есть</label>
                   </li>
                   <li class="filters-bluetooth-item">
-                    <input class="bluetooth-input" type="radio" name="bluetooth" id="bluetooth-false" value="false">
+                    <input class="bluetooth-input visually-hidden" type="radio" name="bluetooth" id="bluetooth-false" value="false">
                     <label class="bluetooth-label" for="bluetooth-false">Нет</label>
                   </li>
                 </ul>
@@ -229,14 +224,14 @@
                     <span class="products-item-price">500 руб.</span>
                   </div>
 
-                  <p class="products-item-image">
+                  <div class="products-item-image" tabindex="0">
                     <img src="img/catalog-selfie-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  </p>
-
-                  <div class="products-action">
-                    <button class="button button-to-cart" type="button">В корзину</button>
-                    <button class="button-to-compare" type="button">Добавить к сравнению</button>
+                    <div class="products-action">
+                      <button class="action-button button button-to-cart" type="button">В корзину</button>
+                      <button class="action-button button-to-compare" type="button">Добавить к сравнению</button>
+                    </div>
                   </div>
+
                 </li>
 
                 <li class="products-item">
@@ -247,13 +242,12 @@
                     <span class="products-item-price">1 500 руб.</span>
                   </div>
 
-                  <p class="products-item-image">
+                  <div class="products-item-image" tabindex="0">
                     <img src="img/catalog-selfie-professional.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  </p>
-
-                  <div class="products-action">
-                      <button class="button button-to-cart" type="button">В корзину</button>
-                      <button class="button-to-compare" type="button">Добавить к сравнению</button>
+                    <div class="products-action">
+                      <button class="action-button button button-to-cart" type="button">В корзину</button>
+                      <button class="action-button button-to-compare" type="button">Добавить к сравнению</button>
+                    </div>
                   </div>
                 </li>
 
@@ -265,13 +259,12 @@
                     <span class="products-item-price">2 500 руб.</span>
                   </div>
 
-                  <p class="products-item-image">
+                  <div class="products-item-image" tabindex="0">
                     <img src="img/catalog-selfie-unsinkable.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  </p>
-
-                  <div class="products-action">
-                      <button class="button button-to-cart" type="button">В корзину</button>
-                      <button class="button-to-compare" type="button">Добавить к сравнению</button>
+                    <div class="products-action">
+                      <button class="action-button button button-to-cart" type="button">В корзину</button>
+                      <button class="action-button button-to-compare" type="button">Добавить к сравнению</button>
+                    </div>
                   </div>
                 </li>
 
@@ -283,13 +276,12 @@
                     <span class="products-item-price">4 900 руб.</span>
                   </div>
 
-                  <p class="products-item-image">
+                  <div class="products-item-image" tabindex="0">
                     <img src="img/catalog-selfie-hand.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-                  </p>
-
-                  <div class="products-action">
-                      <button class="button button-to-cart" type="button">В корзину</button>
-                      <button class="button-to-compare" type="button">Добавить к сравнению</button>
+                    <div class="products-action">
+                      <button class="action-button button button-to-cart" type="button">В корзину</button>
+                      <button class="action-button button-to-compare" type="button">Добавить к сравнению</button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -312,7 +304,7 @@
     </main>
 
     <footer class="main-footer">
-        <div class="footer-menu-and-logo">
+        <div class="footer-menu-and-logo container">
           <a href="index.html" class="main-footer-logo">
             <img src="img/logo-device-yellow.svg" width="163" height="38" alt="Логотип интернет-магазина Device">
           </a>
@@ -336,7 +328,7 @@
           </ul>
         </div>
 
-        <div class="footer-nav-and-information">
+        <div class="footer-nav-and-information container">
           <p class="footer-information-address footer-information">г. Москва, ул. Строителей, 15</p>
 
           <ul class="footer-nav-information">
@@ -354,7 +346,7 @@
           <p class="footer-information-phone footer-information">Тел.: +7 (495) 495-95-95</p>
         </div>
 
-        <div class="footer-social-and-copyright">
+        <div class="footer-social-and-copyright container">
           <ul class="footer-social-list">
             <li class="footer-social-item social-fb"><a href="www.facebook.com"><span class="visually-hidden">Facebook</span></a></li>
             <li class="footer-social-item social-inst"><a href="www.instagram.com"><span class="visually-hidden">Instagram</span></a></li>
