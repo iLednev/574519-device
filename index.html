@@ -93,7 +93,7 @@
         <h2 class="visually-hidden">Промо товары</h2>
 
         <ul class="banners-slider">
-          <li class="banners-slide banners-slide-selfie">
+          <li class="banners-slide banners-slide-selfie active-slide">
             <div class="image-container">
               <p class="banners-slide-image">
                 <img src="img/slider-selfiestick.png" width="384" height="486" alt="Cамая длинная селфи-палка">
@@ -205,9 +205,9 @@
 
           <li class="banners-switch">
             <ul class="banners-switch-list">
-              <li class="banners-switch-item"><button class="switch-button checked" type="button"><span class="visually-hidden">Самая длинная селфи-палка</span></button></li>
-              <li class="banners-switch-item"><button class="switch-button" type="button"><span class="visually-hidden">Мотивирующий фитнес-браслет</span></button></li>
-              <li class="banners-switch-item"><button class="switch-button" type="button"><span class="visually-hidden">Квадрокоптер с лазером</span></button></li>
+              <li class="banners-switch-item"><button class="switch-button switch-first checked" type="button"><span class="visually-hidden">Самая длинная селфи-палка</span></button></li>
+              <li class="banners-switch-item"><button class="switch-button switch-second" type="button"><span class="visually-hidden">Мотивирующий фитнес-браслет</span></button></li>
+              <li class="banners-switch-item"><button class="switch-button switch-third" type="button"><span class="visually-hidden">Квадрокоптер с лазером</span></button></li>
             </ul>
           </li>
         </ul>
@@ -419,5 +419,33 @@
 
       <button class="close-pop-up" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
+
+    <script>
+        var switchFirst = document.querySelector(".switch-first");
+        var switchSecond = document.querySelector(".switch-second");
+        var switchThird = document.querySelector(".switch-third");
+        var allButtons = document.querySelectorAll(".switch-button");
+
+        var popup = document.querySelector(".write-us-pop-up");
+
+        switchFirst.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          allButtons.classList.remove("checked");
+          switchFirst.classList.add("checked");
+})
+
+switchSecond.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          allButtons.classList.remove("checked");
+          switchSecond.classList.add("checked");
+})
+
+switchThird.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          allButtons.classList.remove("checked");
+          switchThird.classList.add("checked");
+})
+
+      </script>
   </body>
 </html>

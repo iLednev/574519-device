@@ -358,6 +358,8 @@ li.banners-slide-bracelet,
   padding: 0;
   display: flex;
   z-index: 4;
+
+  display: none;
 }
 
 .banners-slide-selfie::before {
@@ -1255,6 +1257,7 @@ li.banners-slide-selfie img {
 }
 
 .write-us-pop-up {
+  display: none;
   position: fixed;
 
   top: 20%;
@@ -1268,7 +1271,6 @@ li.banners-slide-selfie img {
   padding-left: 100px;
   background-color: #f2f2f2;
   z-index: 8;
-  display: none;
 
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -2648,4 +2650,8 @@ li.banners-slide-selfie img {
 .write-us-input input:disabled,
 .write-us-input textarea:disabled {
   background-color: rgba(237, 181, 181, 0.5);
+}
+
+.active-slide {
+  display: block;
 }
