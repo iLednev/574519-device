@@ -48,10 +48,6 @@ img {
   height: 1px;
   margin: -1px;
 }
-
-li.banners-slide-selfie,
-li.banners-slide-bracelet,
-/* li.banners-slide-quadrupter, */
 /* .services-slide-delievery, */
 .services-slide-credit,
 .services-slide-warranty {
@@ -533,7 +529,7 @@ li.banners-slide-selfie img {
 
 .banners-slide-table {
   min-width: 400px;
-  margin-bottom: auto;
+  margin-bottom: 43px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -2652,6 +2648,6 @@ li.banners-slide-selfie img {
   background-color: rgba(237, 181, 181, 0.5);
 }
 
-.active-slide {
-  display: block;
+.show {
+  display: flex;
 }
