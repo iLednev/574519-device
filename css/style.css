@@ -507,8 +507,8 @@ li.banners-slide-selfie img {
   cursor: pointer;
   padding: 0;
 
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
 
   border-radius: 50%;
   border: 1px solid black;
@@ -577,7 +577,7 @@ li.banners-slide-selfie img {
 .catalog-section {
   box-sizing: border-box;
   margin: 0 auto;
-  margin-bottom: 72px;
+  margin-bottom: 81px;
   padding: 0;
 }
 
@@ -593,7 +593,7 @@ li.banners-slide-selfie img {
 .catalog-section-item {
   margin: 0;
   padding: 0;
-  padding-top: 190px;
+  padding-top: 193px;
   position: relative;
   width: 160px;
 
@@ -755,8 +755,6 @@ li.banners-slide-selfie img {
   color: #f7e184;
 }
 
-{}
-
 .button-services:active::before {
   content: "";
   position: absolute;
@@ -764,7 +762,7 @@ li.banners-slide-selfie img {
   left: 0;
 
   width: 278px;
-  min-height: 20px;
+  min-height: 40px;
 
   background-color: #000000;
   z-index: -1;
@@ -1618,7 +1616,7 @@ li.banners-slide-selfie img {
 }
 
 .fieldset-bluetooth {
-  margin-bottom: 31px;
+  margin-bottom: 41px;
 }
 
 .legend-bluetooth {
@@ -1778,7 +1776,7 @@ li.banners-slide-selfie img {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 38px;
+  padding-bottom: 34px;
   width: 360px;
   display: flex;
   flex-wrap: wrap;
@@ -1813,7 +1811,7 @@ li.banners-slide-selfie img {
 
 .products-item:nth-last-of-type(1),
 .products-item:nth-last-of-type(2) {
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 }
 
 .products-item-text {
@@ -1840,7 +1838,7 @@ li.banners-slide-selfie img {
 .products-item-image {
   height: 380px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   padding: 0;
   order: -1;
 }
@@ -1978,6 +1976,11 @@ li.banners-slide-selfie img {
 
 .main-header-logo:active,
 .main-footer-logo:active {
+  opacity: 0.3;
+}
+
+.main-header-logo img:active,
+.main-footer-logo img:active {
   opacity: 0.3;
 }
 
@@ -2150,7 +2153,10 @@ li.banners-slide-selfie img {
   z-index: 6;
 }
 
-.nav-catalog-menu:hover .catalog-menu-dropdown,
+.nav-catalog-menu:hover .catalog-menu-dropdown {
+  display: flex;
+}
+
 .nav-catalog-menu:focus-within .catalog-menu-dropdown {
   display: flex;
 }
@@ -2427,6 +2433,7 @@ li.banners-slide-selfie img {
 }
 
 .products-item-heading a {
+  display: block;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -2516,6 +2523,10 @@ li.banners-slide-selfie img {
   letter-spacing: 0.18px;
   font-weight: 800;
   color: #000000;
+}
+
+.catalog-link {
+  display: block;
 }
 
 .services-switch-list,
@@ -2636,6 +2647,10 @@ li.banners-slide-selfie img {
 }
 
 .footer-copyright a:active {
+  opacity: 0.3;
+}
+
+.footer-copyright img:active {
   opacity: 0.3;
 }
 
