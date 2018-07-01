@@ -206,9 +206,9 @@
 
         <div class="banners-switch">
           <ul class="banners-switch-list">
-            <li class="banners-switch-item"><button class="switch-button switch-first checked" type="button"><span class="visually-hidden">Самая длинная селфи-палка</span></button></li>
-            <li class="banners-switch-item"><button class="switch-button switch-second" type="button"><span class="visually-hidden">Мотивирующий фитнес-браслет</span></button></li>
-            <li class="banners-switch-item"><button class="switch-button switch-third" type="button"><span class="visually-hidden">Квадрокоптер с лазером</span></button></li>
+            <li class="banners-switch-item"><button class="switch-button checked" type="button"><span class="visually-hidden">Самая длинная селфи-палка</span></button></li>
+            <li class="banners-switch-item"><button class="switch-button" type="button"><span class="visually-hidden">Мотивирующий фитнес-браслет</span></button></li>
+            <li class="banners-switch-item"><button class="switch-button" type="button"><span class="visually-hidden">Квадрокоптер с лазером</span></button></li>
           </ul>
         </div>
       </section>
@@ -257,7 +257,7 @@
           </ul>
 
           <ul class="services-slider">
-            <li class="services-slide services-slide-delievery">
+            <li class="services-slide services-slide-delievery services-show">
               <h3 class="services-heading services-delievery-heading">Доставка</h3>
               <p class="services-description services-delievery-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -323,9 +323,11 @@
 
           <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-          <a class="map" href="map.html">
-            <img src="img/map.png" width="560" height="222" alt="Карта с расположением офиса по адресу: &quot;г.Москва, улица строителей, 15&quot;">
-          </a>
+          <p class="map-container">
+            <a class="map" href="map.html">
+              <img src="img/map.png" width="560" height="222" alt="Карта с расположением офиса по адресу: &quot;г.Москва, улица строителей, 15&quot;">
+            </a>
+          </p>
 
           <a href="write-us.html" class="button button-write-us">Напишите нам</a>
         </section>
@@ -420,32 +422,6 @@
       <button class="close-pop-up" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
 
-    <script>
-        var switchFirst = document.querySelector(".switch-first");
-        var switchSecond = document.querySelector(".switch-second");
-        var switchThird = document.querySelector(".switch-third");
-        var allButtons = document.querySelectorAll(".switch-button");
-
-        var popup = document.querySelector(".write-us-pop-up");
-
-        switchFirst.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          allButtons.classList.remove("checked");
-          switchFirst.classList.add("checked");
-})
-
-switchSecond.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          allButtons.classList.remove("checked");
-          switchSecond.classList.add("checked");
-})
-
-switchThird.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          allButtons.classList.remove("checked");
-          switchThird.classList.add("checked");
-})
-
-      </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
