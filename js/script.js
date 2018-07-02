@@ -48,8 +48,8 @@ for (var i = 0; i < servicesButtons.length; i++) {
 
       for (var j = 0; j < allServices.length; j++) {
         if (servicesButtons[j].classList.contains("button-services-checked")) {
-          showService.classList.remove("services-show");
-          allServices[j].classList.add("services-show");
+          showService.classList.remove("show-block");
+          allServices[j].classList.add("show-block");
           showService = allServices[j];
         }
       }
