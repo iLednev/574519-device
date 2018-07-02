@@ -5,10 +5,12 @@
 //preventDefault() - отмена стандартного действия элемента
 //element.classList.add("класс") - добавление класса элементу
 
+//Промо слайдер
+
 var bannersButtons = document.querySelectorAll(".switch-button");
 var checkedButton = document.querySelector(".switch-button.checked");
 var allBanners = document.querySelectorAll(".banners-slide");
-var showSlide =  document.querySelector(".banners-slide.show");
+var showSlide =  document.querySelector(".banners-slide.show-flex");
 
 for (var i = 0; i < bannersButtons.length; i++) {
   bannersButtons[i].addEventListener("click", function (evt) {
@@ -20,8 +22,8 @@ for (var i = 0; i < bannersButtons.length; i++) {
 
       for (var j = 0; j < allBanners.length; j++) {
         if (bannersButtons[j].classList.contains("checked")) {
-          showSlide.classList.remove("show");
-          allBanners[j].classList.add("show");
+          showSlide.classList.remove("show-flex");
+          allBanners[j].classList.add("show-flex");
           showSlide = allBanners[j];
         }
       }
@@ -29,11 +31,12 @@ for (var i = 0; i < bannersButtons.length; i++) {
   })
 }
 
+//Слайдер услуг
 
 var servicesButtons = document.querySelectorAll(".button-services");
 var servicesCheckedButton = document.querySelector(".button-services-checked");
 var allServices = document.querySelectorAll(".services-slide");
-var showService =  document.querySelector(".services-slide.services-show");
+var showService =  document.querySelector(".services-slide.show-block");
 
 for (var i = 0; i < servicesButtons.length; i++) {
   servicesButtons[i].addEventListener("click", function (evt) {
@@ -53,3 +56,13 @@ for (var i = 0; i < servicesButtons.length; i++) {
     }
   })
 }
+
+//Поп-ап с обратной связью
+
+var writeUs = document.querySelector(".write-us-pop-up");
+var writeButton = document.querySelector(".button-write-us");
+
+writeButton.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  writeUs.classList.add("")
+})
