@@ -61,8 +61,28 @@ for (var i = 0; i < servicesButtons.length; i++) {
 
 var writeUs = document.querySelector(".write-us-pop-up");
 var writeButton = document.querySelector(".button-write-us");
+var closeWriteUs = document.querySelector(".close-write-us");
 
 writeButton.addEventListener("click", function (evt) {
   evt.preventDefault ();
-  writeUs.classList.add("")
+  writeUs.classList.add("show-block");
+})
+
+closeWriteUs.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  writeUs.classList.remove("show-block");
+})
+
+var map = document.querySelector(".map-pop-up");
+var mapButton = document.querySelector(".map-container");
+var closeMap = document.querySelector(".close-map");
+
+mapButton.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  map.classList.add("show-block");
+})
+
+closeMap.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  map.classList.remove("show-block");
 })
