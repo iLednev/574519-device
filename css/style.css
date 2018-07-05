@@ -848,6 +848,14 @@ img {
   min-height: 40px;
 }
 
+.services-switch-item:first-of-type .button-services {
+  padding-left: 20px;
+}
+
+.services-switch-item:first-of-type .button-services-checked {
+  padding-left: 12px;
+}
+
 .services-switch-item:last-of-type {
   margin: 0;
 }
@@ -881,6 +889,7 @@ img {
 
 .button-services-checked {
   color: #f7e184;
+  padding-left: 20px;
 }
 
 .button-services-checked::before {
@@ -1644,21 +1653,6 @@ img {
   min-height: 156px;
 }
 
-/* @keyframes map-show {
-  0% {
-    height: 2px;
-    width: 2px;
-  }
-
-  50% {
-    width: 960px;
-  }
-
-  100% {
-    height: 559px;
-  }
-} */
-
 .map-pop-up {
   position: fixed;
   top: 10%;
@@ -1672,6 +1666,11 @@ img {
   transform: translateX(-50%);
 
   z-index: 10;
+}
+
+.map-pop-up p {
+  margin: 0;
+  padding: 0;
 }
 
 .map-pop-up.show-block {
@@ -1702,6 +1701,8 @@ img {
   opacity: 0.5;
   background-color: #f0c52e;
   transform: rotate(45deg);
+
+  cursor: pointer;
 
   z-index: 2;
   outline: none;
