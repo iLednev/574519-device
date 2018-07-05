@@ -1632,6 +1632,7 @@ img {
 .write-us-input input:focus,
 .write-us-input textarea:focus {
   color: #464646;
+  background-color: #ffffff;
 
   outline: 3px solid rgba(240, 197, 46, 0.5);
 }
@@ -2613,6 +2614,7 @@ img {
 
 .filters-price-text input:focus {
   color: #464646;
+  background-color: #ffffff;
 
   outline: 3px solid rgba(240, 197, 46, 0.5);
 }

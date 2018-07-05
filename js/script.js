@@ -1,10 +1,3 @@
-//document - вся страница
-//window - всё окно
-//document.querySelector("селектор") {} - поиск по css-селектору
-//element.addEventListener("действие", function () {}) - перехват пользовательского действия (клик, нажатие клавиши и т.д.)
-//preventDefault() - отмена стандартного действия элемента
-//element.classList.add("класс") - добавление класса элементу
-
 //Промо слайдер
 
 var overlay = document.querySelector(".pop-up-overlay");
@@ -29,7 +22,7 @@ for (var i = 0; i < bannersButtons.length; i++) {
         }
       }
     }
-  })
+  });
 }
 
 //Слайдер услуг
@@ -55,9 +48,8 @@ for (var i = 0; i < servicesButtons.length; i++) {
         }
       }
     }
-  })
+  });
 }
-
 
 //Поп-ап с картой
 
@@ -69,13 +61,13 @@ mapButton.addEventListener("click", function(evt) {
   evt.preventDefault ();
   map.classList.add("show-block");
   overlay.classList.add("show-block");
-})
+});
 
 closeMap.addEventListener("click", function(evt) {
   evt.preventDefault ();
   map.classList.remove("show-block");
   overlay.classList.remove("show-block");
-})
+});
 
 
 overlay.addEventListener("click", function(evt) {
@@ -83,11 +75,10 @@ overlay.addEventListener("click", function(evt) {
   writeUs.classList.remove("show-block");
   map.classList.remove("show-block");
   overlay.classList.remove("show-block");
-}
-)
-
+});
 
 //Поп-ап с обратной связью
+
 var formEmail = document.querySelector(".write-us-email");
 var formMessage = document.querySelector(".write-us-textarea");
 var formName = document.querySelector(".write-us-name");
@@ -101,35 +92,34 @@ writeButton.addEventListener("click", function(evt) {
   evt.preventDefault ();
   writeUs.classList.add("show-block");
   overlay.classList.add("show-block");
+  writeUs.classList.remove("modal-error");
   formName.focus();
-})
+});
 
 closeWriteUs.addEventListener("click", function(evt) {
   evt.preventDefault ();
   writeUs.classList.remove("show-block");
   overlay.classList.remove("show-block");
-})
+});
 
 submit.addEventListener("submit", function (evt) {
+  writeUs.classList.remove("modal-error");
+  writeUs.offsetWidth = writeUs.offsetWidth;
   if(!formName.value || !formMessage.value || !formEmail.value) {
-    writeUs.classList.remove("modal-error");
-    writeUs.offsetWidth = writeUs.offsetWidth;
-    writeUs.classList.add("modal-error");
     evt.preventDefault ();
+    writeUs.classList.add("modal-error");
     for (var i = 0; i < formArray.length; i++) {
       if (!formArray[i].value) {
         formArray[i].classList.add("invalid");
       }
     }
   }
-})
+});
 
 for (var i = 0; i < formArray.length; i++) {
   formArray[i].addEventListener ("focus", function() {
-    for (var j = 0; j < formArray.length; j++) {
-      if(this.classList.contains("invalid")) {
-        this.classList.remove("invalid");
-      }
+    if(this.classList.contains("invalid")) {
+      this.classList.remove("invalid");
     }
-  })
+  });
 }
