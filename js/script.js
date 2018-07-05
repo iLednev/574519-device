@@ -91,7 +91,7 @@ overlay.addEventListener("click", function(evt) {
 var name = document.querySelector(".write-us-name");
 var email = document.querySelector(".write-us-email");
 var message = document.querySelector(".write-us-message");
-var submit = document.querySelector("submit-write-us");
+var submit = document.querySelector(".submit-write-us");
 var writeUs = document.querySelector(".write-us-pop-up");
 var writeButton = document.querySelector(".button-write-us");
 var closeWriteUs = document.querySelector(".close-write-us");
