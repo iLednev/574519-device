@@ -18,6 +18,40 @@
   font-style: normal;
 }
 
+@keyframes error {
+  0%, 20%, 40%, 60%, 80% {
+    transform-origin: 100%;
+    transform: rotate(2deg) translateX(50%);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform-origin: 100%;
+    transform: rotate(-2deg) translateX(50%);
+  }
+
+  100% {
+    transform-origin: 100%;
+    transform: rotate(0) translateX(50%);
+  }
+}
+
+@keyframes writeus-show {
+  0% {
+    transform: translateX(50%) scale(0.1);
+    right: -100%;
+  }
+
+  50% {
+    transform: translateX(50%) scale(0.9);
+    right: 60%;
+    }
+
+  100% {
+    transform: translateX(50%) scale(1);
+    right: 50%;
+  }
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -1503,23 +1537,6 @@ img {
   opacity: 0.3;
 }
 
-@keyframes writeus-show {
-  0% {
-    transform: translateX(50%) scale(0.1);
-    right: -100%;
-  }
-
-  50% {
-    transform: translateX(50%) scale(0.9);
-    right: 60%;
-    }
-
-  100% {
-    transform: translateX(50%) scale(1);
-    right: 50%;
-  }
-}
-
 .write-us-pop-up {
   position: fixed;
   top: 15%;
@@ -1545,6 +1562,11 @@ img {
   animation-name: writeus-show;
   animation-duration: 0.7s;
   animation-timing-function: ease;
+}
+
+.write-us-pop-up.modal-error {
+  animation-name: error;
+  animation-duration: 0.6s;
 }
 
 .write-us-form {
@@ -1586,6 +1608,11 @@ img {
   background-color: #f2f2f2;
 
   border: none;
+}
+
+.write-us-input input.invalid,
+.write-us-input textarea.invalid {
+  background-color: rgba(237, 181, 181, 0.5);
 }
 
 .write-us-input input:hover,
@@ -2797,4 +2824,8 @@ img {
 
 .show-block {
   display: block;
+}
+
+.invalid {
+  background-color: rgba(237, 181, 181, 0.5);
 }

@@ -42,7 +42,7 @@ var showService =  document.querySelector(".services-slide.show-block");
 for (var i = 0; i < servicesButtons.length; i++) {
   servicesButtons[i].addEventListener("click", function(evt) {
     evt.preventDefault ();
-    if (!this.classList.contains(".button-services-checked")) {
+    if (!this.classList.contains("button-services-checked")) {
       servicesCheckedButton.classList.remove("button-services-checked");
       servicesCheckedButton = this;
       this.classList.add("button-services-checked");
@@ -88,10 +88,11 @@ overlay.addEventListener("click", function(evt) {
 
 
 //Поп-ап с обратной связью
-var name = document.querySelector(".write-us-name");
-var email = document.querySelector(".write-us-email");
-var message = document.querySelector(".write-us-message");
-var submit = document.querySelector(".submit-write-us");
+var formEmail = document.querySelector(".write-us-email");
+var formMessage = document.querySelector(".write-us-textarea");
+var formName = document.querySelector(".write-us-name");
+var formArray = [formName, formEmail, formMessage];
+var submit = document.querySelector(".write-us-form");
 var writeUs = document.querySelector(".write-us-pop-up");
 var writeButton = document.querySelector(".button-write-us");
 var closeWriteUs = document.querySelector(".close-write-us");
@@ -100,13 +101,7 @@ writeButton.addEventListener("click", function(evt) {
   evt.preventDefault ();
   writeUs.classList.add("show-block");
   overlay.classList.add("show-block");
-})
-
-submit.addEventListener("submit", function (evt) {
-  if(!name.value) {
-    evt.preventDefault ();
-    console.log("nope");
-  }
+  formName.focus();
 })
 
 closeWriteUs.addEventListener("click", function(evt) {
@@ -114,3 +109,27 @@ closeWriteUs.addEventListener("click", function(evt) {
   writeUs.classList.remove("show-block");
   overlay.classList.remove("show-block");
 })
+
+submit.addEventListener("submit", function (evt) {
+  if(!formName.value || !formMessage.value || !formEmail.value) {
+    writeUs.classList.remove("modal-error");
+    writeUs.offsetWidth = writeUs.offsetWidth;
+    writeUs.classList.add("modal-error");
+    evt.preventDefault ();
+    for (var i = 0; i < formArray.length; i++) {
+      if (!formArray[i].value) {
+        formArray[i].classList.add("invalid");
+      }
+    }
+  }
+})
+
+for (var i = 0; i < formArray.length; i++) {
+  formArray[i].addEventListener ("focus", function() {
+    for (var j = 0; j < formArray.length; j++) {
+      if(this.classList.contains("invalid")) {
+        this.classList.remove("invalid");
+      }
+    }
+  })
+}
