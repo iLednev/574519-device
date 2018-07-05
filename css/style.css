@@ -587,8 +587,8 @@ img {
 
 .switch-button.checked {
   box-shadow:
-  inset 0 0 0 2.5px white,
-  inset 0 0 0 3.5px black;
+  inset 0 0 0 3px white,
+  inset 0 0 0 4px black;
 }
 
 .banners-slide-details {
