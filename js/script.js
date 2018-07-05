@@ -58,23 +58,6 @@ for (var i = 0; i < servicesButtons.length; i++) {
   })
 }
 
-//Поп-ап с обратной связью
-
-var writeUs = document.querySelector(".write-us-pop-up");
-var writeButton = document.querySelector(".button-write-us");
-var closeWriteUs = document.querySelector(".close-write-us");
-
-writeButton.addEventListener("click", function(evt) {
-  evt.preventDefault ();
-  writeUs.classList.add("show-block");
-  overlay.classList.add("show-block");
-})
-
-closeWriteUs.addEventListener("click", function(evt) {
-  evt.preventDefault ();
-  writeUs.classList.remove("show-block");
-  overlay.classList.remove("show-block");
-})
 
 //Поп-ап с картой
 
@@ -102,3 +85,32 @@ overlay.addEventListener("click", function(evt) {
   overlay.classList.remove("show-block");
 }
 )
+
+
+//Поп-ап с обратной связью
+var name = document.querySelector(".write-us-name");
+var email = document.querySelector(".write-us-email");
+var message = document.querySelector(".write-us-message");
+var submit = document.querySelector("submit-write-us");
+var writeUs = document.querySelector(".write-us-pop-up");
+var writeButton = document.querySelector(".button-write-us");
+var closeWriteUs = document.querySelector(".close-write-us");
+
+writeButton.addEventListener("click", function(evt) {
+  evt.preventDefault ();
+  writeUs.classList.add("show-block");
+  overlay.classList.add("show-block");
+})
+
+submit.addEventListener("submit", function (evt) {
+  if(!name.value) {
+    evt.preventDefault ();
+    console.log("nope");
+  }
+})
+
+closeWriteUs.addEventListener("click", function(evt) {
+  evt.preventDefault ();
+  writeUs.classList.remove("show-block");
+  overlay.classList.remove("show-block");
+})
