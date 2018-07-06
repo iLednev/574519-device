@@ -21,12 +21,12 @@
 @keyframes error {
   0%, 20%, 40%, 60%, 80% {
     transform-origin: 100%;
-    transform: rotate(2deg) translateX(50%);
+    transform: rotate(1deg) translateX(50%);
   }
 
   10%, 30%, 50%, 70%, 90% {
     transform-origin: 100%;
-    transform: rotate(-2deg) translateX(50%);
+    transform: rotate(-1deg) translateX(50%);
   }
 
   100% {
@@ -51,6 +51,13 @@
     right: 50%;
   }
 }
+/* html {
+  background: url("../pixel-perfect/index-promo-slide1.png") no-repeat center top;
+}
+
+body {
+  opacity: 0.5;
+} */
 
 body {
   margin: 0px;
@@ -74,12 +81,20 @@ img {
   max-width: 100%;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -593,23 +608,34 @@ img {
 
 .banners-slide-details {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding: 0;
 }
 
 .banners-slide-table {
+  margin-bottom: 41px;
+  min-width: 400px;
+}
+
+.slide-table-body {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 43px;
-  min-width: 400px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .banners-slide-table tr {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .banners-slide-table th {
+  display: flex;
+  margin: 0;
   padding: 0;
   padding-right: 80px;
 
@@ -620,6 +646,8 @@ img {
 }
 
 .banners-slide-table td {
+  display: flex;
+  margin: 0;
   margin-bottom: 7px;
   padding: 0;
   padding-right: 77px;
@@ -978,8 +1006,9 @@ img {
 
 .services-description {
   margin: 0;
+  margin-right: 25px;
   padding: 0;
-  width: 460px;
+  width: 435px;
 
   letter-spacing: 0.15px;
 }
@@ -1071,7 +1100,7 @@ img {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  width: 480px;
+  width: 475px;
 }
 
 .about-us-delievery-list {
@@ -2411,7 +2440,10 @@ img {
 }
 
 .input-search {
-  padding-bottom: 14px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
   padding-left: 37px;
   max-height: 32px;
 
