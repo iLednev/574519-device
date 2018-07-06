@@ -94,6 +94,13 @@ writeButton.addEventListener("click", function(evt) {
   overlay.classList.add("show-block");
   writeUs.classList.remove("modal-error");
   formName.focus();
+  for (var i = 0; i < formArray.length; i++) {
+    formArray[i].addEventListener ("focus", function() {
+      if(this.classList.contains("invalid")) {
+        this.classList.remove("invalid");
+      }
+    });
+  }
 });
 
 closeWriteUs.addEventListener("click", function(evt) {
@@ -114,12 +121,8 @@ submit.addEventListener("submit", function (evt) {
       }
     }
   }
+  else {
+    writeUs.classList.remove("show-block");
+    overlay.classList.remove("show-block");
+  }
 });
-
-for (var i = 0; i < formArray.length; i++) {
-  formArray[i].addEventListener ("focus", function() {
-    if(this.classList.contains("invalid")) {
-      this.classList.remove("invalid");
-    }
-  });
-}
