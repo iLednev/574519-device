@@ -2804,6 +2804,10 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.bluetooth-input:checked:active ~ .bluetooth-label::before {
+  display: none;
+}
+
 .bluetooth-label::before {
   position: absolute;
   top: 14px;
