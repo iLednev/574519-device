@@ -51,13 +51,6 @@
     right: 50%;
   }
 }
-/* html {
-  background: url("../pixel-perfect/index-promo-slide1.png") no-repeat center top;
-}
-
-body {
-  opacity: 0.5;
-} */
 
 body {
   margin: 0px;
@@ -114,7 +107,7 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
@@ -342,7 +335,7 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1457,20 +1450,24 @@ input[type="radio"].visually-hidden {
 
 .footer-nav-information {
   display: flex;
+  justify-content: flex-start;
   text-align: center;
   margin: 0;
   margin-top: 6px;
   padding: 0;
   padding-left: 8px;
-  min-width: 424px;
 
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
 
   list-style: none;
 }
 
 .footer-information-item {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1924,7 +1921,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -1983,6 +1980,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-range-bar {
+  position: relative;
   margin-top: 3px;
   width: 200px;
   height: 2px;
@@ -1993,6 +1991,7 @@ input[type="radio"].visually-hidden {
 .button-range {
   position: absolute;
   top: -10px;
+  padding: 0;
 
   width: 20px;
   height: 20px;
@@ -2124,7 +2123,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
 }
 
 .sorting-type-list {
@@ -2369,7 +2368,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
 }
 
 .pagination-side {
@@ -2538,7 +2537,7 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.5px;
   font-weight: 800;
   text-transform: uppercase;
 }
